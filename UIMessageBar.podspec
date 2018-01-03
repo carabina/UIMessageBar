@@ -8,8 +8,8 @@ Pod::Spec.new do |spec|
     spec.source           = { :git => 'https://github.com/Meniny/UIMessageBar.git', :tag => spec.version.to_s }
     spec.platform         = :ios, '9.0'
     spec.ios.deployment_target = '9.0'
-    spec.source_files     = 'UIMessageBar/**/*.swift'
-    spec.resource_bundles = {'UIMessageBar' => ['UIMessageBar/Resources/**/*']}
+    spec.source_files     = 'UIMessageBar/**/*.{swift}'
+    spec.resource_bundles = {'UIMessageBar' => ['UIMessageBar/Resources/**/*.{xib,png}']}
     spec.framework        = 'UIKit'
     spec.requires_arc     = true
 end
